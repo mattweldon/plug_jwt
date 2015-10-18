@@ -4,7 +4,7 @@ defmodule PlugJwt.Mixfile do
   def project do
     [app: :plug_jwt,
      version: "0.7.1",
-     elixir: "~> 1.0.0",
+     elixir: "~> 1.1.0",
      description: description,
      package: package,
      deps: deps]
@@ -16,7 +16,7 @@ defmodule PlugJwt.Mixfile do
 
   defp deps do
     [
-      {:joken, "~> 0.15"},
+      {:joken, "0.15.0"},
       {:plug, "~> 1.0"},
       {:cowboy, "~> 1.0.0", optional: true},
       {:jsx, "~> 2.1.1",  only: :test},
